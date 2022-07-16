@@ -1,0 +1,54 @@
+.features {
+  background: $color-tory-blue url("../img/features-bg-desktop.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 110px;
+
+  & h2 {
+    margin-bottom: 49px;
+  }
+
+  @include vp-1365 {
+    padding-top: 90px;
+  }
+
+  @include vp-767 {
+    padding-top: 55px;
+    padding-bottom: 34px;
+
+    & h2 {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.features__card {
+  height: 100%;
+
+  @include vp-1365 {
+    & br {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+
+    & span {
+      white-space: nowrap;
+    }
+  }
+}

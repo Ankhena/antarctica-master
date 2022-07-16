@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 15px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-tangaroa;
+
+  background-color: $color-alice-blue;
+  border: none;
+  cursor: pointer;
+  transition: opacity $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}

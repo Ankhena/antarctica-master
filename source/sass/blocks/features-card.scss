@@ -1,0 +1,38 @@
+.features-card {
+  padding: 30px 21px 23px 30px;
+  margin: 0;
+  background-color: $color-alice-blue;
+
+  @include vp-1365 {
+    padding: 25px 16px 20px 20px;
+  }
+
+  & img {
+    margin-bottom: 18px;
+  }
+
+  & h3 {
+    line-height: 25px;
+    margin-bottom: 13px;
+
+    @include vp-1365 {
+      margin-bottom: 9px;
+    }
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-tangaroa;
+    margin: 0;
+  }
+}
+
+.features-card__icon {
+  min-height: 50px;
+
+  @include vp-1365 {
+    min-height: 46px;
+  }
+}

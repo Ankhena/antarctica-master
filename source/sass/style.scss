@@ -1,0 +1,64 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+// Swiper 7.4.1
+// @import "vendor/swiper";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+@import "global/list-reset";
+
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/page";
+@import "blocks/btn";
+@import "blocks/section-title";
+@import "blocks/modal";
+@import "blocks/main-nav";
+@import "blocks/features-card";
+@import "blocks/catalog-card";
+@import "blocks/section";
+@import "blocks/section-subtitle";
+@import "blocks/form-input";
+@import "blocks/header";
+@import "blocks/menu-toggle";
+@import "blocks/footer";
+@import "blocks/social-list";
+@import "blocks/promo";
+@import "blocks/features";
+@import "blocks/catalog";
+@import "blocks/booking";
+@import "blocks/booking-form";
+@import "blocks/contacts";
+@import "blocks/map-canvas";
+
+// ---------------------------------
+
+// ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
+
+// ❗ обязательно используйте @media для отключения ховеров на тач устройствах
+// но не используем для текстовых полей ( input, textarea )
+/* @media (hover: hover), screen and (min-width: 0\0) {
+  &:hover,
+  &:focus {
+    color: $color-default-white;
+  }
+} */
+
+// адаптив пишем внутри каждого класса (смотрим container.scss)
+
+// для фикса проблем с vh на iOS в сборке подключен скрипт
+// используя vh на проекте задавайте их также как в примере в utils.scss
+
+// для любых transition обязательно указывайте transition-property
+// transition: $trans-default ❌ ---> transition: color $trans-default ✅

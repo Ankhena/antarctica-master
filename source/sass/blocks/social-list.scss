@@ -1,0 +1,26 @@
+.social-list {
+  display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1365 {
+    gap: 18px;
+  }
+
+  @include vp-767 {
+    margin-right: auto;
+  }
+}
+
+.social-list__item {
+  margin: auto 0;
+
+  & a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

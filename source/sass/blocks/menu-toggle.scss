@@ -1,0 +1,23 @@
+.menu-toggle {
+  width: 54px;
+  height: 42px;
+  padding: 15px;
+  border: none;
+  border-radius: 0;
+  background-image: url("../img/svg/toggle-menu-closed.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  z-index: 1;
+
+  &--opened {
+    background-image: url("../img/svg/toggle-menu-opened.svg");
+    background-position: center;
+  }
+
+  @include vp-767 {
+    display: inline;
+  }
+}

@@ -1,0 +1,9 @@
+.map-canvas {
+  height: 100%;
+
+  & iframe {
+    min-height: 306px;
+    width: 100%;
+    border: none;
+  }
+}
